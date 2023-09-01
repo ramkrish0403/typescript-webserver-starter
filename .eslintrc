@@ -1,0 +1,25 @@
+// https://github.com/CreativeTechGuy/ReactTemplate/blob/main/.eslintrc.js
+{
+  "root": true,
+  "env": {
+		"es6": true,
+		"es2022": true,
+		"node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": { 
+    "no-console": "off", // this means error!
+    "prettier/prettier": "error",
+    "@typescript-eslint/prefer-nullish-coalescing": "error"
+  }
+}
