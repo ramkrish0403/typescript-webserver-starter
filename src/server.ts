@@ -44,6 +44,7 @@ const startServer = async (): Promise<void> => {
         // Connect to database
         // Connect to redis
         // Start cron jobs
+		
         // Set server ready
 		gracefulServer.setReady();
 	} catch (err) {
