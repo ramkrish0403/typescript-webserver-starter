@@ -1,0 +1,2 @@
+All the util modules are expected to contain pure functions. They should not have any side effects and should not depend on any external resources. This makes them easy to test and reuse.
+They can be wrappers around third-party libraries or custom functions that you use in multiple places in your application.

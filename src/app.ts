@@ -10,18 +10,23 @@ https://github.com/fastify/fastify-type-provider-json-schema-to-ts
 import fastify, { FastifyInstance } from "fastify";
 import { JsonSchemaToTsProvider } from "@fastify/type-provider-json-schema-to-ts";
 
+// import plugins
+import {userPlugin as UserPlugin} from "./services/user";
+
 const fastifyOptions = {
 	logger: true,
 	// http2: true,
 };
 // const app = fastify(fastifyOptions);
-const app: FastifyInstance = fastify(fastifyOptions).withTypeProvider<JsonSchemaToTsProvider>();
+const app: FastifyInstance =
+	fastify(fastifyOptions).withTypeProvider<JsonSchemaToTsProvider>();
 
 // Add top level fastify decorators
 
 // Add top level fastify hooks
 
 // Register your plugins
+app.register(UserPlugin);
 
 // Declare a route
 app.get("/ping", async () => {

@@ -19,10 +19,13 @@
 	"dependencies": {
 		"@gquittet/graceful-server": "^4.0.8",
 		"dotenv": "^16.3.1",
-		"fastify": "^4.17.0"
+		"fastify": "^4.22.2",
+		"json-schema-to-ts": "^2.9.2",
+		"lodash": "^4.17.21"
 	},
 	"devDependencies": {
 		"@fastify/type-provider-json-schema-to-ts": "^2.2.2",
+		"@types/lodash": "^4.14.197",
 		"@types/node": "^20.2.3",
 		"@typescript-eslint/eslint-plugin": "^5.59.6",
 		"@typescript-eslint/parser": "^5.59.6",
@@ -34,6 +37,6 @@
 		"prettier": "^2.8.8",
 		"rimraf": "^5.0.1",
 		"ts-node": "^10.9.1",
-		"typescript": "^5.0.4"
+		"typescript": "^5.2.2"
 	}
 }
