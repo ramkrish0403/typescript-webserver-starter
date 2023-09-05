@@ -9,7 +9,7 @@ https://github.com/fastify/fastify-type-provider-json-schema-to-ts
 */
 import fastify, { FastifyInstance } from "fastify";
 import { JsonSchemaToTsProvider } from "@fastify/type-provider-json-schema-to-ts";
-import { swaggerPlugin, swaggerUIPlugin, swaggerUIOptions } from "./swagger";
+import { swaggerPlugin, swaggerOptions, swaggerUIPlugin, swaggerUIOptions } from "./swagger";
 
 // import plugins
 import {userPlugin as UserPlugin} from "./services/user";
@@ -27,7 +27,7 @@ const app: FastifyInstance =
 // Add top level fastify hooks
 
 // Register swagger
-app.register(swaggerPlugin);
+app.register(swaggerPlugin, swaggerOptions);
 app.register(swaggerUIPlugin, swaggerUIOptions);
 
 // Register route plugins

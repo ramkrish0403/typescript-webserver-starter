@@ -1,4 +1,4 @@
-import { swaggerPlugin } from "./swagger";
+import { swaggerPlugin, swaggerOptions } from "./swagger";
 import { swaggerUIPlugin, swaggerUIOptions } from "./swaggerUI";
 
-export { swaggerPlugin, swaggerUIPlugin, swaggerUIOptions };
+export { swaggerPlugin, swaggerOptions, swaggerUIPlugin, swaggerUIOptions };
