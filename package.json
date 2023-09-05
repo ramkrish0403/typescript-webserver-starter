@@ -1,5 +1,5 @@
 {
-	"name": "temp",
+	"name": "typescript-fastify-starter",
 	"version": "1.0.0",
 	"description": "",
 	"main": "src/index.ts",
@@ -17,6 +17,8 @@
 		"start": "node dist/index.js"
 	},
 	"dependencies": {
+		"@fastify/swagger": "^8.10.0",
+		"@fastify/swagger-ui": "^1.9.3",
 		"@gquittet/graceful-server": "^4.0.8",
 		"dotenv": "^16.3.1",
 		"fastify": "^4.22.2",
