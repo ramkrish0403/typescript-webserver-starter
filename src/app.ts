@@ -9,10 +9,15 @@ https://github.com/fastify/fastify-type-provider-json-schema-to-ts
 */
 import fastify, { FastifyInstance } from "fastify";
 import { JsonSchemaToTsProvider } from "@fastify/type-provider-json-schema-to-ts";
-import { swaggerPlugin, swaggerOptions, swaggerUIPlugin, swaggerUIOptions } from "./swagger";
+import {
+	swaggerPlugin,
+	swaggerOptions,
+	swaggerUIPlugin,
+	swaggerUIOptions,
+} from "./swagger";
 
 // import plugins
-import {userPlugin as UserPlugin} from "./services/user";
+import { userPlugin as UserPlugin } from "./services/user";
 
 const fastifyOptions = {
 	logger: true,
